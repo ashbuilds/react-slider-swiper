@@ -2,6 +2,7 @@ react-slider-swiper
 ======================================
 
 Inherit from [react-id-swiper](https://github.com/kidjp85/react-id-swiper/edit/master/README.md)
+
 **Added** : _Server Side Rendering_
 
 > A library to use [Swiper](http://www.idangero.us/swiper/get-started/) as a ReactJs component.
