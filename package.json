@@ -1,6 +1,6 @@
 {
   "name": "react-slider-swiper",
-  "version": "2.0.4",
+  "version": "2.0.6",
   "description": "ReactJs component for iDangerous Swiper",
   "main": "lib/index.js",
   "scripts": {
@@ -17,18 +17,17 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/ashish41191/react-slider-swiper"
   },
   "author": "Ashish Mishra<ashish.mishra41191@gmail.com>",
   "dependencies": {
     "object-assign": "^4.1.1",
     "prop-types": "^15.5.7",
-    "swiper": "3.4.2"
-  },
-  "peerDependencies": {
+    "swiper": "3.4.2",
     "react": "^0.14.0 || ^15.0.0",
     "react-dom": "^0.14.0 || ^15.0.0"
   },
+  "peerDependencies": {},
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.0",
