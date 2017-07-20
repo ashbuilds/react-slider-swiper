@@ -1,9 +1,11 @@
-react-slider-swiper
+react-slider-swiper Inherit from [react-id-swiper](https://github.com/kidjp85/react-id-swiper/edit/master/README.md)
 ======================================
+
+**Added** : _Server Side Rendering_
 
 > A library to use [Swiper](http://www.idangero.us/swiper/get-started/) as a ReactJs component.
 
-
+![Demo](https://media.giphy.com/media/l0HlD8Aq2zZoF19aE/source.gif)
 
 What is Swiper?
 ===============
@@ -16,18 +18,18 @@ Swiper is not compatible with all platforms, it is a modern touch slider which i
 DEMO
 ====
 
-You can see the demo with example code 
+You can see the demo with example code [HERE](http://kidjp85.github.io/react-slider-swiper/)
 
 ## Installation
 By npm
 
 ```bash
-npm install --save react-id-swiper
+npm install --save react-slider-swiper
 ```
 
 By Yarn
 ```bash
-yarn add react-id-swiper
+yarn add react-slider-swiper
 ```
 
 ## Recommendation
@@ -246,7 +248,7 @@ You can check Swiper API documentation [HERE](http://idangero.us/swiper/api/)
 First, clone this repo to your local
 
 ```bash
-https://github.com/kidjp85/react-id-swiper-demo.git
+https://github.com/kidjp85/react-slider-swiper-demo.git
 ```
 
 Install node packages

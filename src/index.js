@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Swiper from 'swiper';
 import objectAssign from 'object-assign';
 import PropTypes from 'prop-types';
 
@@ -174,16 +173,18 @@ export default class ReactIdSwiper extends React.Component {
   constructor(props) {
     super(props);
     this.renderContent = this.renderContent.bind(this);
+    this.SwiperMain = {};
   }
 
   componentDidMount() {
-    this.swiper = Swiper(ReactDOM.findDOMNode(this), objectAssign({}, this.props));
+    this.SwiperMain = require('swiper');
+    this.swiper = this.SwiperMain(ReactDOM.findDOMNode(this), objectAssign({}, this.props));
   }
 
   componentWillReceiveProps(nextProps) {
     if (this.props.rebuildOnUpdate && typeof this.swiper !== 'undefined') {
       this.swiper.destroy(true, true);
-      this.swiper = Swiper(ReactDOM.findDOMNode(this), objectAssign({}, nextProps));
+      this.swiper = this.SwiperMain(ReactDOM.findDOMNode(this), objectAssign({}, nextProps));
     }
   }
 
@@ -194,7 +195,7 @@ export default class ReactIdSwiper extends React.Component {
   componentDidUpdate() {
     if (this.props.rebuildOnUpdate && typeof this.swiper !== 'undefined') {
       this.swiper.destroy(true, true);
-      this.swiper = Swiper(ReactDOM.findDOMNode(this), objectAssign({}, this.props));
+      this.swiper = this.SwiperMain(ReactDOM.findDOMNode(this), objectAssign({}, this.props));
     }
   }
 
